@@ -14,7 +14,7 @@
   - [Choose your Dataset](#choose)
 - [Dataset](#dataset)
 - [Results](#results)
-- [Summary of Findings](#Sof)
+- [Summary of Findings](#sof)
 - [Key Insights for Presentation](#kip)
 - [Why this project?](#p) 
 - [Licensing, Authors, and Acknowledgements](#licensing)
@@ -80,16 +80,18 @@ variable definitions : [link](https://docs.google.com/spreadsheets/u/0/d/1gDyi_L
 <p align = "center">
   <img src="Results/Count of different loan status.PNG">
 </p>
+
 * The majority of borrowers are employed and all other categories as small part of borrowers. In small Group full time has highest, after that self empolyed are there and so on.
 <p align = "center">
   <img src="Results/Count of different employement status.PNG">
 </p>
+
 * As for the monthly income we can see that the plot is skewed to the right with the mode (most frequent income) is about 5000. 
 <p align = "center">
   <img src="Results/Monthly income of the borrowers.PNG">
 </p>
 
-## Summary of Findings <a name="Sof"></a>
+## Summary of Findings <a name="sof"></a>
 
 While exploring the data i found that most individuals who are given loans are employed with a loan duration of 36 month on average, as well we found that the these borrowers on average have 5000 monthly income which augmented their chances on getting these loan's.
 The primary loan category was debt followed by home improvement which was surprising.
