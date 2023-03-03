@@ -12,12 +12,9 @@
 - [Project Overview](#po)
 - [Project Details](#pd)
   - [Choose your Dataset](#choose)
-  - [Explore](#explore)
-  - [Document Story](#ds)
-  - [Slide Deck](#sd)
-  - [Submit](#submit)
 - [Dataset](#dataset)
 - [Results](#results)
+- [Summary of Findings](#Sof)
 - [Key Insights for Presentation](#kip)
 - [Why this project?](#p) 
 - [Licensing, Authors, and Acknowledgements](#licensing)
@@ -73,26 +70,26 @@ Dataset Options
 
 ### Dataset Chosen <a name="dataset"></a>
 This data set contains information on peer to peer loans facilitated by credit company Prosper. There are 113,937 loans with 81 variables from LoanStatus, StatedMonthlyIncome to EmployementStatus.
-the data can be found in :  https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv.
-variable definitions : https://docs.google.com/spreadsheets/u/0/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit?usp=sharing
+the data can be found in :  [link](https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv).
+variable definitions : [link](https://docs.google.com/spreadsheets/u/0/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit?usp=sharing).
 
  
 ### Results <a name="results"></a>
 
-- Most of the loans in the data set are actually current loans. Past due loans are split in several groups based on the length of payment delay. Other big part is completed loans, defaulted loans compromise a minority, however chargedoff loans also comporomise a substanial amount.
+* Most of the loans in the data set are actually current loans. Past due loans are split in several groups based on the length of payment delay. Other big part is completed loans, defaulted loans compromise a minority, however chargedoff loans also comporomise a substanial amount.
 <p align = "center">
   <img src="Results/Count of different loan status.PNG">
 </p>
-- The majority of borrowers are employed and all other categories as small part of borrowers. In small Group full time has highest, after that self empolyed are there and so on.
+* The majority of borrowers are employed and all other categories as small part of borrowers. In small Group full time has highest, after that self empolyed are there and so on.
 <p align = "center">
   <img src="Results/Count of different employement status.PNG">
 </p>
-- As for the monthly income we can see that the plot is skewed to the right with the mode (most frequent income) is about 5000. 
+* As for the monthly income we can see that the plot is skewed to the right with the mode (most frequent income) is about 5000. 
 <p align = "center">
   <img src="Results/Monthly income of the borrowers.PNG">
 </p>
 
-## Summary of Findings
+## Summary of Findings <a name="Sof"></a>
 
 While exploring the data i found that most individuals who are given loans are employed with a loan duration of 36 month on average, as well we found that the these borrowers on average have 5000 monthly income which augmented their chances on getting these loan's.
 The primary loan category was debt followed by home improvement which was surprising.
