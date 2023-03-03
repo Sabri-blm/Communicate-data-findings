@@ -61,11 +61,6 @@ In the second part, you will take your main findings from your exploration and c
 
 First, you will choose a dataset from the Dataset Options.
 
-Download the Dataset Options file for full details & descriptions from the Resources Tab.
-
-   * Click on Resources in the leftmost panel of your classroom
-   * Click the File Name to start download
-
 **Quick List Below:**
 
 Dataset Options
@@ -75,77 +70,37 @@ Dataset Options
 * [Loan Data from Prosper](https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv&sa=D&ust=1554486256021000) with [Prosper Data Dictionary to Explain Dataset's Variables](https://www.google.com/url?q=https://docs.google.com/spreadsheet/ccc?key%3D0AllIqIyvWZdadDd5NTlqZ1pBMHlsUjdrOTZHaVBuSlE%26usp%3Dsharing&sa=D&ust=1554486256024000)
 * [PISA Data](https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud507/pisa2012.csv.zip&sa=D&ust=1554482573645000) with [PISA Data Dictionary to Explain Dataset's Variables](https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud507/pisadict2012.csv&sa=D&ust=1554482573645000)
 
-#### Step 1.2: Explore Your Data <a name="explore"></a>
 
-It’s time to get to the interesting bits. Explore your data and document your findings in a report. The report should briefly introduce the dataset, then systematically walk through the points of exploration that you conducted. You should have headers and text that organize your thoughts and findings. Visualizations in this part of the project need not be completely polished: this is just your own exploration at this point. However, you should still make sure that you adhere to principles of using appropriate plot types and encodings so that accurate conclusions can be drawn, and that you have enough comments and labeling so that when you return to your work, you can quickly grasp your analysis steps.
-
-#### Step 2.1: Document your Story <a name="ds"></a>
-
-At the end of your exploration, you probably have a bunch of things that you’ve discovered. Now it’s time to organize your findings and select a story that you will convey to others. In your readme document, you should summarize your main findings and reflect on the steps you took in your data exploration. You should also lay out the key insights that you want to convey in your explanatory report as well as any changes to visualizations, or note new visualizations that will be created to bridge between your insights.
-
-#### Step 2.2: Create your Slide Deck <a name="sd"></a>
-
-Follow the plans you laid out in the previous step and create a slide deck with explanatory data visualizations to tell a story about the data you explored. You can start with code that you used in your exploration, but you should make sure that the code is revised so that your plots are polished. Make sure that you also pay attention to aspects of design integrity in your revisions.
-
-#### Step 2.3: (Optional) Get Feedback
-
-Though not required, it is highly recommended that you try to get feedback from at least one person before you submit your project. By sharing your work with others, you can get input from a different perspective that catches things that you may have originally missed. Share your slide deck with someone in person and have them provide live feedback on what they get from your slide deck. Alternatively, you can also share your work with your fellow students.
-
-You might need to ask specific questions to prompt your reader. The following questions might be good starters; be sure to follow up or come up with your own questions:
-
-   * What do you notice about each visualization?
-   * What questions do you have about the data?
-   * What relationships do you notice?
-   * What do you think is the main takeaway from the slide deck?
-   * Is there anything that you don’t understand from the plots?
-
-#### Step 2.4: Review and Submit the Project <a name="submit"></a>
-
-There’s one last thing to do before you submit your project. You should closely read the [project rubric](https://review.udacity.com/#!/projects/8ff9475b-3d6b-4c5b-9593-96794db62987/rubric).
-
-
-### Dataset <a name="dataset"></a>
-This data set contains information on peer to peer loans facilitated by credit company Prosper. There are 113,937 loans with 81 variables. For the purpose of this investigation I've taken the following variables: Term, LoanStatus, BorrowerRate, ProsperRating (Alpha), ListingCategory (numeric), EmploymentStatus, DelinquenciesLast7Years, StatedMonthlyIncome, TotalProsperLoans, LoanOriginalAmount, LoanOriginationDate, Recommendations and Investors.
+### Dataset Chosen <a name="dataset"></a>
+This data set contains information on peer to peer loans facilitated by credit company Prosper. There are 113,937 loans with 81 variables from LoanStatus, StatedMonthlyIncome to EmployementStatus.
+the data can be found in :  https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv.
+variable definitions : https://docs.google.com/spreadsheets/u/0/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit?usp=sharing
 
  
 ### Results <a name="results"></a>
 
 - Most of the loans in the data set are actually current loans. Past due loans are split in several groups based on the length of payment delay. Other big part is completed loans, defaulted loans compromise a minority, however chargedoff loans also comporomise a substanial amount.
 <p align = "center">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-1.png">
+  <img src="Results/Count of different loan status.PNG">
 </p>
 - The majority of borrowers are employed and all other categories as small part of borrowers. In small Group full time has highest, after that self empolyed are there and so on.
 <p align = "center">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-2.png">
+  <img src="Results/Count of different employement status.PNG">
 </p>
-- With a boundary of mean and 3 times standard deviations distribution of monthly income still has noticeable right skew but now we can see that mode is about 5000. 
+- As for the monthly income we can see that the plot is skewed to the right with the mode (most frequent income) is about 5000. 
 <p align = "center">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-3.png">
-</p>
-- The most frequent rating among defaulted loans is actually D. And the most frequent rating among Completed is alsoDand second highest is A and so on in Status and Prosper Rating.
-<p align = "center">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-4.png">
-</p>
-- In both of them Credit Start with Listing Category Graphs of the debt Consolidation have most frequency among all of them.
-<p align = "center">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-5.png">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-6.png">
-</p>
-- Lower ratings seem to have greater proportions of individuals with employment status Not Employed, Self-employed, Retired and Part-Time. 
-<p align = "center">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-7.png">
-</p>
-- Except for the lowest ratings defaulted credits tend to be larger than completed. Most of the defaulted credits comes from individuals with low Prosper rating.
-<p align = "center">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-8.png">
-</p>
-- Except for Auto, Business and Home Improvemrnt dont have nearly equal mean amoong all of them. Business category tend to have larger amount.<p align = "center">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-9.png">
-  <img src="https://raw.githubusercontent.com/Abhishek20182/Communicate-Data-Findings/master/Result/Result-10.png">
+  <img src="Results/Monthly income of the borrowers.PNG">
 </p>
 
+## Summary of Findings
+
+While exploring the data i found that most individuals who are given loans are employed with a loan duration of 36 month on average, as well we found that the these borrowers on average have 5000 monthly income which augmented their chances on getting these loan's.
+The primary loan category was debt followed by home improvement which was surprising.
+
 ## Key Insights for Presentation <a name="kip"></a>
-I've chosen key plots with high data-to-ink ratio for the presentation. The plots I've chosen shows distribution of main variables, Loan status, monthly income, Prosper rating and I've tried to tell a story what are major predictors for loan status and Prosper rating variables.
+i have chosen a couple of plot that can depict the results that i found in my exploratory analysis (what kind of status does the borrowers needs to augment the chances of getting a loan/number of investor).
+
+At first, we started by introducing the employement status for the borrowers (which we found that the majority are employed). After that, we went to see the loan status, and lastly we presented the monthly income stated by the borrowers. i have plotted these findings using countplots and histograms and i simplified them as much as i can.
    
 ### Why this project? <a name="p"></a>
 
