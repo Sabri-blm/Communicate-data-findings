@@ -4,7 +4,7 @@
    </a>
 </p>
 <h3 align="center"><a href='https://www.udacity.com/course/data-analyst-nanodegree--nd002'> Udacity Data Analyst Nanodegree </a></h3>
-<h4 align="center">Project V: Communicate-Data-Findings</h4>
+<h4 align="center">Project 3: Communicate-Data-Findings</h4>
 
 ## Table of Contents
 - [Installation](#installation)
@@ -23,7 +23,7 @@
 - [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
-This project uses Python 3 and is designed to be completed through the Jupyter Notebooks IDE. It is highly recommended that you use the [Anaconda distribution](https://www.anaconda.com/distribution/) to install Python, since the distribution includes all necessary Python libraries as well as Jupyter Notebooks. The following libraries are expected to be used in this project:
+This project is written in Python 3 and is intended to be completed using the google colab notebooks or Jupyter Notebooks IDE. It is strongly advised that you install Python using the [Anaconda distribution](https://www.anaconda.com/distribution/), as the distribution includes all necessary Python libraries as well as Jupyter Notebooks. This project is expected to make use of the libraries listed below:
 
 - Numpy
 - Pandas
@@ -32,20 +32,19 @@ This project uses Python 3 and is designed to be completed through the Jupyter N
 
 ## Project Motivation <a name="motivation"></a>
 
-This is an Udacity Nanodegree project.I was interested in using Prosper Loan Data to better understand : </br>
+This is an Udacity Nanodegree project. I was interested in using Prosper Loan Data to better understand : </br>
 - Univariate Exploration:
   - Loan status
+  - Term
   - Employment Status
+  - Total prosper loans
   - Stated Monthly Income
 - Bivariate Exploration:
-  - Status and Prosper Rating
-  - Credit Start with Listing Category
-  - Loan Status and Loan Amount
-  - Prosper Rating and Employment Status
+  - Loan status and Prosper Rating
+  - Loan status and Listing category
 - Multivariate Exploration:
-  - Rating, Loan Amount and Loan Status
-  - Credit category, Credit rating and outcome of Credit
-  - Amount, Listing Category Loan and Loan Status Interact
+  - Loan Original Amount, Loan Status and Prosper Rating
+  - Loan Original Amount, Loan Status and Listing Category
   
 ### Project Overview <a name="po"></a>
 
